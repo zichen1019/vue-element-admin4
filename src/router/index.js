@@ -455,12 +455,20 @@ export const asyncRoutes = [
   {
     path: '/unionLotto',
     component: Layout,
+    alwaysShow: true,
+    meta: { title: 'unionLotto', icon: 'money' },
     children: [
       {
         path: 'index',
         component: () => import('@/views/union-lotto/index'),
         name: 'UnionLotto',
-        meta: { title: 'unionLotto', icon: 'money' }
+        meta: { title: 'diagram', icon: 'money' }
+      },
+      {
+        path: 'calculation',
+        component: () => import('@/views/union-lotto/calculation'),
+        name: 'WinningProbability',
+        meta: { title: 'winningProbability', icon: 'money' }
       }
     ]
   },

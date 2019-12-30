@@ -189,10 +189,6 @@ export default {
       clear: both
     }
 
-    .box-card {
-      width: 480px;
-    }
-
     .bold {
         font-weight: bold;
     }

@@ -65,7 +65,9 @@ export default {
     todayMustList: '今日必达',
     viewTodayMust: '必达视图',
     profile: '个人中心',
-    unionLotto: '福利彩票'
+    unionLotto: '福利彩票',
+    diagram: '彩票曲线图',
+    winningProbability: '中奖几率'
   },
   navbar: {
     dashboard: '首页',

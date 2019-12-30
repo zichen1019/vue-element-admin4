@@ -1,8 +1,11 @@
 import { MessageBox, Message } from 'element-ui'
 import store from '@/store'
-import { getToken } from '@/utils/auth'
+import { getToken, getPrivateIp } from '@/utils/auth'
 
 export function openService(service) {
+  getPrivateIp(function(ip) {
+    console.log('Got IP! :' + ip)
+  })
   // request interceptor
   service.interceptors.request.use(
     config => {
@@ -35,6 +38,7 @@ export function openService(service) {
      * 以下代码均为样例，请结合自生需求加以修改，若不需要，则可删除
      */
     response => {
+      console.log(response)
       const res = response.data
       if (res.StatusCode !== 200) {
         Message({

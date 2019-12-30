@@ -77,6 +77,7 @@
       <br>
       <social-sign />
     </el-dialog>
+
   </div>
 </template>
 
@@ -105,8 +106,8 @@ export default {
     }
     return {
       loginForm: {
-        username: 'admin',
-        password: '111111'
+        username: 'Tourist',
+        password: 'Tourist'
       },
       loginRules: {
         username: [{ required: true, trigger: 'blur', validator: validateUsername }],

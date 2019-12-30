@@ -17,7 +17,8 @@ const state = {
   roles: [],
   setting: {
     articlePlatform: []
-  }
+  },
+  ip: ''
 }
 
 const mutations = {
@@ -63,6 +64,9 @@ const mutations = {
   },
   SET_AVATAR: (state, avatar) => {
     state.avatar = avatar
+  },
+  SET_IP: (state, ip) => {
+    state.ip = ip
   },
   SET_ROLES: (state, roles) => {
     state.roles = roles

@@ -41,7 +41,7 @@ module.exports = {
       //     ['^' + process.env.VUE_APP_BASE_API]: ''
       //   }
       // }
-      [process.env.VUE_APP_BASE_API]: {
+      '/dev-api': {
         target: `http://localhost:${port}/mock`,
         changeOrigin: true,
         pathRewrite: {
